@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="pessoaVO"
+            type="br.com.mat.jackofalltrades.Objects.PessoaVO"/>
+    </data>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@{pessoaVO.nome}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="15dp"
+        tools:layout_editor_absoluteX="17dp"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:text="@{pessoaVO.telefone}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView8"
+        android:layout_marginLeft="40dp"
+        tools:text="pessoa" />
+</android.support.constraint.ConstraintLayout>
+</layout>
